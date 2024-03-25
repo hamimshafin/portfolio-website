@@ -26,6 +26,7 @@
   #profile,
   .section-container {
     display: block;
+
   }
   .arrow {
     display: none;
@@ -41,7 +42,8 @@
     width: 275px;
     height: 275px;
     margin: 0 auto 2rem;
-  }
+    }
+    
   .about-containers {
     margin-top: 0;
   }
