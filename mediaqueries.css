@@ -90,9 +90,13 @@
     text-align: center;
   }
   .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    max-width: 100%; /* Limit the maximum width of the image to its container's width */
+    height: auto; /* Allow the height to adjust proportionally */
+    margin: 0 auto 2rem; /* Center the image horizontally with a bottom margin */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically*/
   }
   .section__text__p2 {
     font-size: 1.25rem;
