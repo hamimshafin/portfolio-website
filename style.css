@@ -310,7 +310,16 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
+.details-container {
+  flex: 1 1 45%; /* Adjust to make sure items are properly sized */
+  min-width: 280px;
+}
 .section-container {
   gap: 5rem;
   height: 80%;
@@ -324,13 +333,14 @@ section {
   display: flex;
   overflow: hidden;
 }
-
-/* EXPERIENCE SECTION */
-#experience {
-  position: relative;
-  padding: 2rem;
+section {
+  padding-top: 4vh;
+  margin-bottom: 2rem; /* Add margin to the bottom of each section */
+  height: fit-content; /* Ensure the section grows with its content */
 }
 
+
+/* Ensure consistent spacing and alignment for the experience section */
 .experience-details-container {
   display: flex;
   justify-content: space-between;
@@ -340,19 +350,33 @@ section {
 
 .about-containers {
   display: flex;
+  justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
 .details-container {
-  flex: 1; /* Ensures both containers take equal space */
-  min-width: 300px; /* Adjust based on your design */
+  flex: 1 1 45%; /* Ensure each container takes up about 45% of the width */
+  min-width: 280px; /* Minimum width for each container */
 }
 
-.experience-sub-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+.article-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns layout */
+  gap: 1rem; /* Space between articles */
 }
+
+article {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between the icon and the text */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
 
 .article-container {
   display: flex;
