@@ -1,3 +1,9 @@
+@media screen and (max-width: 1200px) {
+  .section-container {
+    display: block;
+    margin-bottom: 2rem;
+  }
+}
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
