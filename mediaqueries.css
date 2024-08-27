@@ -324,3 +324,26 @@ article {
     text-align: justify;
   }
 }
+
+/* Section Pic*/
+
+@media only screen and (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .section__pic-container {
+    width: 80%; /* Adjust the width to fit better on smaller screens */
+    max-width: 300px; /* Limit the max width */
+    height: auto; /* Ensure the height scales proportionally */
+  }
+
+  .section__pic-container img {
+    width: 100%;
+    height: auto; /* This ensures the image scales with the container */
+    object-fit: cover; /* Keeps the image from distorting */
+  }
+}
+
